@@ -26,7 +26,7 @@ while True:
     else:
         recu = recu.decode('utf-8') # décodage du message reçu
         print('[SERVEUR] Réception de:', recu)
-        reponse = input('reponse : ')
+        reponse = input('reponse : ') # recu.upper () [:: -1]
         print('[SERVEUR] Envoi de :', reponse)
         reponse = reponse.encode('utf-8') # encodage du message à émettre
         n = client.send(reponse)
